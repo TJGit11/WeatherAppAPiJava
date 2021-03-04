@@ -1,8 +1,13 @@
 package com.tts.WeatherApp.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 import java.util.Map;
 
+@Data
+@NoArgsConstructor
 public class Response {
     private List<Map<String, String>> weather;
     private Map <String, String> coord;
