@@ -25,6 +25,7 @@ public class WeatherController {
     @GetMapping
     public String getIndex(Model model) {
         model.addAttribute("request", new Request());
+        model.addAttribute("recentSearches", weatherService.getRecentSearches());
         return "index";
     }
 
